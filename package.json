@@ -2,6 +2,10 @@
   "name": "create-ordenada-next-app",
   "module": "index.ts",
   "type": "module",
+  "bin": "./dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
