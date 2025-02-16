@@ -1,6 +1,6 @@
 {
   "name": "create-ordenada-next-app",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "bin": "./dist/index.js",
   "scripts": {
