@@ -65,4 +65,10 @@ const prettierJson = {
     trailingComma: 'all',
 };
 fs.writeFileSync(prettierJsonPath, JSON.stringify(prettierJson, null, 2));
+/**
+ * Install prisma
+ */
+console.log('Installing prisma...');
+execSync('bun add -d prisma');
+execSync('bunx prisma init');
 process.exit();
