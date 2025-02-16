@@ -1,6 +1,8 @@
 {
   "name": "create-ordenada-next-app",
   "module": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "bin": {
     "create-ordenada-next-app": "./dist/index.js"
