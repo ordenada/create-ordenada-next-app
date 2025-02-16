@@ -2,7 +2,9 @@
   "name": "create-ordenada-next-app",
   "module": "src/index.ts",
   "type": "module",
-  "bin": "./dist/index.js",
+  "bin": {
+    "create-ordenada-next-app": "./dist/index.js"
+  },
   "scripts": {
     "build": "tsc"
   },
