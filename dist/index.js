@@ -54,4 +54,15 @@ fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
  */
 console.log('installing storybook');
 execSync('bunx storybook@latest init --no-dev');
+/**
+ * Config prettier
+ */
+console.log('Config prettier');
+const prettierJsonPath = path.join(appPath, '.prettierrc.json');
+const prettierJson = {
+    semi: false,
+    singleQuote: true,
+    trailingComma: 'all',
+};
+fs.writeFileSync(prettierJsonPath, JSON.stringify(prettierJson, null, 2));
 process.exit();
